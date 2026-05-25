@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLIGYM | Panel de Usuario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <header class="navbar dash-nav">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="POLIGYM Logo" class="logo-img">
+            <span class="logo-text">POLIGYM</span>
+        </div>
+        <div class="user-menu">
+            <span id="userNameGreeting" class="user-greeting">Hola, ...</span>
+            <button id="btnLogout" class="btn btn-outline btn-small">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="dash-header">
+            <h1>Clases Disponibles</h1>
+            <p>Selecciona tu clase, reserva tu cupo y presenta tu código de acceso en recepción.</p>
+        </div>
+
+        <div id="classesGrid" class="classes-grid">
+            </div>
+    </main>
+
+    <div id="ticketModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <button id="btnCloseModal" class="close-btn">&times;</button>
+            
+            <div id="modalContent">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

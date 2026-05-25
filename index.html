@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLIGYM | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="POLIGYM Logo" class="logo-img">
+            <span class="logo-text">POLIGYM</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#instalaciones">Instalaciones</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-outline">Ingreso</a>
+            <a href="register.html" class="btn btn-solid">Registro</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Domina tu <span>Fuerza</span></h1>
+            <p>Bienvenido a POLIGYM. Un espacio diseñado para romper tus límites. Regístrate, explora nuestras clases y reserva tu lugar con un solo clic.</p>
+            <div class="hero-actions">
+                <a href="register.html" class="btn btn-solid btn-large">Comenzar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="instalaciones" class="carousel-section">
+        <div class="section-header">
+            <h2>Nuestras Instalaciones</h2>
+            <p>Equipamiento de primer nivel para resultados reales.</p>
+        </div>
+        
+        <div class="carousel-container">
+            <button class="carousel-btn prev" id="btnPrev">&#10094;</button>
+            
+            <div class="carousel-track">
+                <div class="slide active">
+                    <img src="https://co.fitness24seven.com/media/0offj2ge/peso-libre.jpg?width=410&height=260&quality=75&v=1dc26b3e2f65c30" alt="Zona de pesas">
+                    <div class="slide-caption">Zona de Musculación</div>
+                </div>
+                <div class="slide">
+                    <img src="https://media.istockphoto.com/id/2128048740/photo/gym-sport-fitness-exercise-health-healthy-woman-treadmill-training-running-equipment-fit.jpg?s=612x612&w=0&k=20&c=ixsBaUVIKHM6X3yuqjMDa7zrIcxwYAfndYxO-vTsqTw=" alt="Zona de cardio">
+                    <div class="slide-caption">Área de Cardio</div>
+                </div>
+                <div class="slide">
+                    <img src="https://img.freepik.com/foto-gratis/grupo-pilates-haciendo-ejercicio-gimnasio_1303-16385.jpg?semt=ais_hybrid&w=740&q=80" alt="Salón de clases">
+                    <div class="slide-caption">Salón de Clases Grupales</div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next" id="btnNext">&#10095;</button>
+            
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="info-section">
+        <div class="section-header">
+            <h2>¿Por qué POLIGYM?</h2>
+        </div>
+        <div class="cards-grid">
+            <div class="info-card">
+                <div class="card-icon">⚡</div>
+                <h3>Sistema de Reservas</h3>
+                <p>Olvídate de las filas. Regístrate, inicia sesión y aparta tu cupo en tus clases favoritas desde nuestro portal web.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">💪</div>
+                <h3>Clases Diversas</h3>
+                <p>Ofrecemos sesiones de spinning, crossfit, yoga y más, en diferentes horarios para adaptarnos a tu rutina diaria.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">🔐</div>
+                <h3>Acceso Seguro</h3>
+                <p>Al inscribirte en una clase, generaremos un código de verificación único para garantizar tu acceso rápido en recepción.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 POLIGYM. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

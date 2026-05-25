@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLIGYM | Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="back-link">&#10094; Volver al inicio</a>
+                <div class="auth-logo">
+                    <img src="assets/logo.png" alt="POLIGYM Logo">
+                    <h2>POLIGYM</h2>
+                </div>
+                <p>Crea tu cuenta y empieza a entrenar.</p>
+            </div>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regName">Nombre Completo</label>
+                    <input type="text" id="regName" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">Correo Electrónico</label>
+                    <input type="email" id="regEmail" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">Contraseña</label>
+                    <input type="password" id="regPassword" placeholder="Mínimo 6 caracteres" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPasswordConfirm">Confirmar Contraseña</label>
+                    <input type="password" id="regPasswordConfirm" placeholder="Repite tu contraseña" minlength="6" required>
+                </div>
+
+                <div id="registerError" class="error-message hidden"></div>
+                <div id="registerSuccess" class="success-message hidden"></div>
+
+                <button type="submit" class="btn-auth">Crear Cuenta</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

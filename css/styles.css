@@ -196,8 +196,8 @@ a {
     bottom: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
-    color: var(--white);
-    padding: 1rem;
+    color: var(--white); 
+    padding: 1rem 1rem 2.5rem 1rem; 
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -227,9 +227,10 @@ a {
 
 .carousel-dots {
     position: absolute;
-    bottom: 15px;
+    bottom: 12px; 
     width: 100%;
     text-align: center;
+    z-index: 10; 
 }
 
 .dot {
@@ -285,6 +286,96 @@ a {
     color: var(--black);
     margin-bottom: 1rem;
 }
+
+/* UBICACIÓN */
+.location-section {
+    padding: 5rem 5%;
+    background-color: var(--white);
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--cream-white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--light-gray);
+}
+
+.location-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-info h3 {
+    color: var(--primary-orange);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.location-info p {
+    margin-bottom: 0.8rem;
+    color: var(--dark-gray);
+    font-size: 1.05rem;
+}
+
+.schedule {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--medium-gray);
+}
+
+.schedule h4 {
+    color: var(--black);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.schedule ul {
+    list-style: none;
+    color: var(--dark-gray);
+}
+
+.schedule ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.schedule ul li::before {
+    content: '🕒';
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.location-map {
+    flex: 1;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .location-container {
+        flex-direction: column;
+    }
+    .location-info {
+        padding: 2rem;
+    }
+    .location-map {
+        min-height: 300px;
+    }
+}
+
+
 
 /*FOOTER*/
 footer {
